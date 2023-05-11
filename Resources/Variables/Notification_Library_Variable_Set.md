@@ -1,0 +1,12 @@
+- Notification Body Variable 
+    - Name: Notification.Body.Text
+    - Value: You can view the the deployment here: #{Octopus.Web.ServerUri}/app#/#{Octopus.Space.Id}/tasks/#{Octopus.Task.Id}
+    - Type: Text
+- Notification Subject 
+    - Name: Notification.Subject.Text
+    - Value: #{Octopus.Project.Name} #{Octopus.Release.Number} to #{Octopus.Environment.Name} has #{if Octopus.Deployment.Error}failed#{else}completed successfully#{/if}
+    - Type: Text
+- Slack Webhook URL
+    - Name: Notification.Slack.Webhook.Url
+    - Value: [Create or use a webhook URL]
+    - Type: Sensitive
