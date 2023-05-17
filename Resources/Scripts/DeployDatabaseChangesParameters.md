@@ -1,0 +1,29 @@
+Deploy Database Changes Parameters
+
+- Database Package
+    - Name: Database.Deploy.Package
+    - Label: Database Package
+    - Control Type: Package
+    - Help Text: Enter in the package containing all the database changes you wish to deploy.
+- Database Connection String
+    - Name: Database.Deploy.ConnectionString
+    - Label: Database Connection String
+    - Control Type: Sensitive/password box
+    - Help Text: The connection string to the database for the deployment to work.
+- Path to Executable
+    - Name: Database.Deploy.PathToDBUpExe
+    - Label: Path To Executable
+    - Control Type: Single Line Text Box
+    - Help Text: The relative or full path to the DBUp executable to run.
+- What if Deploy
+    - Name: Database.Deploy.WhatIf
+    - Label: What if Deploy
+    - Control Type: Checkbox
+    - Default Value: True
+    - Help Text: Indicates if this is running a what-if deployment that will create an artifact we can then review during the deployment.
+- Database Report Path
+    - Name: Database.Deploy.ReportPath
+    - Label: What if Report Path
+    - Control Type: Single Line Text Box
+    - Default Value: C:\DatabaseReports\\#{Octopus.Environment.Name}
+    - Help Text: The path to the folder where the report will be stored.
