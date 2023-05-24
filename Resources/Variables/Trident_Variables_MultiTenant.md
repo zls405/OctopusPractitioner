@@ -21,3 +21,7 @@
     - Name: Project.Database.Server.Name    
     - Value: (localdb)\MSSQLLocalDB
     - Type: Text
+- Runbook Run Variable
+    - Name: Project.Runbook.Api.Key
+    - Value: Sensitive API Key
+    - Type: Sensitive 
