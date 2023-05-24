@@ -4,7 +4,7 @@
     - Type: Text
 - Report Path Variable
     - Name: Project.Database.Report.Path
-    - Value: C:\DatabaseReports\\#{CommonTenantVariables.TenantAbbr}\\#{Octopus.Environment.Name}
+    - Value: C:\DatabaseReports\\#{Store.Tenant.Abbr}\\#{Octopus.Environment.Name}
     - Type: Text
 - Connection String Variable For Configuration Transform
     - Name: ConnectionStrings:Database
@@ -12,10 +12,10 @@
     - Type: Text
 - Database Name Variable
     - Name: Project.Database.Name     
-    - Value: Trident_#{CommonTenantVariables.TenantAbbr} (Production Scoping)
-    - Value: Trident_#{CommonTenantVariables.TenantAbbr}Development (Development Scoping)
-    - Value: Trident_#{CommonTenantVariables.TenantAbbr}Staging (Development Scoping)
-    - Value: Trident_#{CommonTenantVariables.TenantAbbr}Test (Development Scoping)
+    - Value: Trident_#{Store.Tenant.Abbr} (Production Scoping)
+    - Value: Trident_#{Store.Tenant.Abbr}_Development (Development Scoping)
+    - Value: Trident_#{Store.Tenant.Abbr}_Staging (Development Scoping)
+    - Value: Trident_#{Store.Tenant.Abbr}_Test (Development Scoping)
     - Type: Text
 - Database Server Variable
     - Name: Project.Database.Server.Name    
