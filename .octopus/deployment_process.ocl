@@ -171,7 +171,7 @@ step "verify-application" {
 }
 
 step "update-load-balancer" {
-    name = "Update Load Balancer"
+    name = "Update Load Balancer to point to new version of application"
 
     action {
         action_type = "Octopus.Script"
